@@ -1,0 +1,68 @@
+
+	
+<!DOCTYPE html>
+<html lang="en">         
+	<head>   
+		<meta charset="utf-8">
+			<title>Our Game</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- link to the stylesheet and bootstrap-->
+			<link rel="stylesheet" href="styles.css">
+			<link rel="stylesheet" href="css/bootstrap.min.css">   
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav>
+			<label class="logo">Enjoy Our Non-Competitive Game:</label>
+			<ul>
+				<li><a href="indexhomepage.html">HOME</a></li>
+				<li><a href="indexTips.html">Tips/Resources</a></li>
+				<li><a href="indexAboutUs.html">About Us</a></li>
+				<li><a class="active" href="indexGame.html">Game</a></li>
+				<li><a href="indexSurvey.html">Survey</a></li>
+			</ul>
+		</nav>
+			<!-- Div containing the game -->
+			<div class="hangman">
+				<h1> Hangman </h1>				
+				<br><br>
+				<!-- Input field -->
+				<p class = "tag">Enter your guess</p>
+				<input type="text" class="input" id="input"><br>
+				<br><br>
+				<!-- Submit button -->
+				<button type="button" id="submit" onclick="inputLetter()">Submit</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<!-- Reload button -->
+				<button type="button" onclick="reload()">Retry</button>
+				<br><br>
+				
+				<div id="letters">
+				</div>
+				<br><br>
+				<!-- Wrong letters field -->
+				<p class = "tag">wrong letters</p>
+				<p class = "yellow" id="wrong"></p>
+				<!-- Lifes field -->
+				<p class = "inline" id="mistakes">0</p>
+				<p class = "heart">&#9829;</p>
+			</div>
+			<!-- Hangman Image -->
+			<div class = "inline">
+				<img  src ="Images/Hangmanimages/hangman7.png" alt ="hangman" class = "hangmanImg" id ="changeable">
+				 <br><br><br><br><br><br>
+			</div>
+			<!-- Executioner Image -->
+			<div class = "inline" id = "executioner">
+				<img  src ="Images/Hangmanimages/executioner.png" alt = "executioner" class = "executionerImg">
+				 <br><br><br><br><br> 
+			</div>
+			<!-- Comment Bubble -->
+			<div class = "inline2">		
+				<div class="bubble bubble-bottom-left" contenteditable id ="comments">You already guessed this letter </div> 
+				  
+			</div>
+			<!-- Link to JS -->
+		<script src = "javascript.js"> </script>	
+	</body>
+</html>

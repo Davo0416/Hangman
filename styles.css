@@ -1,0 +1,274 @@
+body.hangman{
+	background-color: #00477d;
+}
+
+p.inline{
+	font-weight: 800;
+	display: inline-block;
+	width: 7%;
+	margin: 0px;
+	font-size: 28px;
+	padding: 2px;
+	text-align: center;
+}
+
+p.heart{
+	display: inline-block;
+	width: 7%;
+	color: red;
+	text-shadow: 1px 2px 0 FireBrick;
+	margin: 0px;
+	font-size: 40px;
+	padding: 2px;
+}
+
+p.tag{
+	font-size: 15px;
+	margin: 0px;
+	background-color: #ebc028;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-align: center;
+	width: 50%;
+	margin-left: auto; 
+	margin-right: auto;
+	box-shadow: 0 5px 0 0 #917b2c ,0 10px 9px 6px #c7ba8d;
+	font-weight: 800;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+input[type=text].input {
+	
+	background-color:LightYellow;
+	height:50px;
+	outline:none;
+	border-radius: 5px;
+	border: 5px solid #ebc028;
+	font-size: 33px;
+	box-shadow: 0 5px 0 0 #917b2c ,0 10px 9px 6px #c7ba8d;
+	font-weight: 600;
+	padding: 0px 20px;
+	width:100%;
+}
+
+p.yellow{
+	background-color:LightYellow;
+	height:50px;
+	width:relative;
+	border-radius: 5px;
+	border: 5px solid #ebc028;
+	font-size: 33px;
+	box-shadow: 0 5px 0 0 #917b2c ,0 10px 9px 6px #c7ba8d;
+	font-weight: 600;
+	margin: 0px;
+	padding-left: 10px;
+
+}
+
+h1{
+	display: inline-block;
+	font-size: 53px;
+	text-shadow: 1px 2px 0 rgba(0,0,0,0.2);
+	margin: 0px;
+	font-weight: 800;
+	text-align:center;
+}
+
+button{
+	outline:none;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 0 0 #917b2c ,0 10px 9px 6px #c7ba8d;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    width:relative;
+    background-color: #ebc028;
+}
+
+button:hover{	
+	background-color: #deb326;
+}
+
+
+button:active{
+	background-color: #edc742;
+}
+
+div.hangman{
+	background-color: PaleGoldenRod; 
+	padding: 10px;
+	border-radius: 7px;
+    width: 350px; 
+    border: 10px solid #ebc028;
+    padding: 7px;
+	margin: 5px;
+	margin-left: 50px;
+	display:inline-block;
+
+}
+
+div.inline{
+	display:inline-block;
+	width: 200px;
+}
+div.inline2{
+	display:inline-block;
+	width: 100px;
+	margin-right:550px;
+	margin-top:120px;
+}
+
+
+img.executionerImg, img.hangmanImg{
+	width: 300px;
+	height:300px;
+}
+
+button{
+	width:44%;
+}
+
+*{
+	padding:0px;
+	margin:0px;
+	text-decoration:none;
+	list-style:none;
+	box-sizing:border-box;
+}
+
+a.active,a:hover{
+	background: #46a9eb;
+	transition: 0.5s;
+}
+
+a{
+	background: #1b9bff;
+}
+
+nav{
+	
+	background:#0082e6;
+	height:80px;
+	width:100%;
+	margin-bottom: 25px;
+}
+label.logo{
+	color:white;
+	font-size:35px;
+	line-height:80px;
+	padding:0 100px 0 0;
+	font-weight:bold;
+	margin-left:40px;
+}
+
+ul{
+	display:inline-block;
+	height: 5px;
+	padding-top: 50px;
+}
+
+nav ul{
+	float:right;
+	margin:0px;
+}
+nav ul li{
+	display:inline-block;
+	margin:0 5px;
+}
+nav ul li a{
+	color:white;
+	font-size:17px;
+	padding:7px 13px;
+	border-radius:3px;
+	text-transform:uppercase;
+}
+
+
+.bubble {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: max-content;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  outline:none;
+  color: #000;
+
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
+}
+
+@media only screen and (max-width:415px) {
+	
+	button{
+		font-size: 28px;
+	}
+	
+	div.hangman{
+		width: 85%;
+		margin: 10px;
+		margin-left: 20px;
+	}
+	
+	 
+	
+	p.tag{
+		font-size: 18px;
+	}
+	
+	nav {
+		width: 100%;
+		height:60px;   
+	}
+
+	div.inline{
+		display:inline-block;
+		width: 120px;
+	}
+	img.executionerImg, img.hangmanImg{
+		width: 200px;
+		height:200px;
+	}
+	.bubble {
+		font-size: 8px;
+		line-height: 10px;
+		width: max-content;
+		border-radius: 10px;
+		padding: 8px;
+	}
+
+	.bubble-bottom-left:before {
+		border-left: 12px solid #fff;
+		border-right: 6px solid transparent;
+		border-top: 6px solid #fff;
+		border-bottom: 10px solid transparent;
+		left: 8px;
+		bottom: -12px;
+	}
+	
+	div.inline2{
+		width: 50px;
+		float:left;
+		margin-right:100px;
+		margin-top:50px;
+	}
+}
