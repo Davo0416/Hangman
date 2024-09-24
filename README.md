@@ -2,7 +2,7 @@
 
 # **Description**
 A Web-based version of the game Hangman made using VSCode and Krita. The games goal is to guess the hidden word by inputing letters or the word itself.
-</br>
+## **Hangman**
 ![image](https://github.com/user-attachments/assets/827c9e8b-2a8c-4949-bc66-f9388866e5df)
 
 # **How does it work**
